@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Tangerine:wght@400;700&display=swap');
+
+body{
+    background-color: rgb(13, 13, 22);
+    grid-template-columns: 10px 1fr 10px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Quicksand", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+    color: white;
+}
+
+section#principal{
+    grid-column: 2;
+}
+
+header{
+    grid-column: 1;
+    margin: 0px;
+    background-color: rgb(30, 30, 53);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.790), rgba(0, 0, 0, 0.790)), url(img/pirate-ship-in-a-storm-1920x1080-v0-kllibqiy39c51.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#textos{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;}
+
+header #titulo h1{
+    font-family: "Pirata One", system-ui;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 3em;
+    margin: 0px;
+   
+}
+
+#titulo h2 {
+    font-family: "Tangerine", cursive;
+    font-weight: 800;
+    font-style: normal;
+    margin: 0px;
+    font-size: 2.4em;
+    translate: 60px -8px;
+}
+
+header #slogan {
+    margin: 8px 0px;
+    color: rgb(16, 174, 223);
+}
+
+header #buttons button {
+    margin: 10px 0px;
+    padding: 7px;
+    border: none;
+    background-color: rgb(228, 119, 18);
+    border-radius: 5px;
+}
+
+#historia{
+    background-color: rgba(0, 0, 0, 0.322);
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 2fr 1fr;
+}
+
+#historia h3{
+    margin: 0px;
+    margin-top: 10px;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2em;
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(15, 117, 75);
+}
+
+#historia p {
+    text-indent: 10px;
+    margin: 10px;
+}
+
+#historia img {
+    border-top-right-radius: 15px;
+    border-end-end-radius: 15px;
+    width: 200px;
+
+}
+
+#cardapio h3{
+  margin: 0px;
+  margin-top: 90px;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.4em;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgb(16, 174, 223);
+}
+
+#cardapio p{
+    text-align: center;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 90px auto;
+    width: 380px;
+    text-align: start;
+    background-color: rgba(255, 255, 255, 0.041);
+}
+
+img#burguer {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 380px;
+}
+
+.item h4{
+    text-indent: 20px;
+    font-family: "Pirata One", system-ui;
+    letter-spacing: 2px;
+    font-size: 1.7em;
+    font-weight: 100;
+    margin: 15px 0px;
+    display: inline-block;
+}
+
+.legenda{
+    text-indent: 2px;
+    display: inline-block;
+}
+
+.ingredientes{
+    
+    text-align: start;
+    margin: 0px 10px;
+}
+
+#botao{
+    display: flex;
+    justify-content: center;
+}
+
+#vercardapio{
+    padding: 8px;
+    font-family: "Pirata One", system-ui;
+    background-color: rgb(221, 92, 18) ;
+    border-radius: 5px;
+    border: none;
+    
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+#contato h3{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.2em;
+    font-weight: 100;
+    margin-top: 130px;
+    margin-bottom: 5px;
+}
+
+#contato{
+    text-align: center;
+}
+
+
+
+#localizar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    width: 400px;
+    height: 300px;
+    background-color: blue;
+    background-image: url(img/map.png);
+    border-radius: 30px;
+}
+
+#local{
+    color: rgb(15, 117, 75);
+    font-size: 3em;
+    text-shadow: 0px 0px 15px rgba(18, 165, 104, 0.205);
+}
+
+#localizar h4{
+    margin: 0px;
+    font-family: "Pirata One", system-ui;
+    font-size: 2.2em;
+    font-weight: 100;
+}
+
+#localizar p{
+    margin: 5px;
+    font-family: "Quicksand", sans-serif;
+   font-optical-sizing: auto;
+
+   font-style: normal;
+    font-weight: 100;
+}
+
+#localizar button{
+    padding: 7px;
+    margin: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(15, 117, 75);
+    border-radius: 5px;
+    border: none;
+    width: 170px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.icone{
+
+    grid-row: 2;
+    grid-column: 1;
+    background-color: rgba(15, 117, 75, 0.849);
+    border-radius: 10px;
+    height: 26px;
+    padding: 6px;
+    width: 26px;
+}
+
+.info{
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 30px 40px 30px;
+    text-align: start;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    justify-items: start;
+    align-items: center;
+    align-content: center;
+}
+
+.info h4{
+ grid-column: 2;
+ grid-row: 2;
+}
+
+.info p{
+ grid-column: 2;
+ grid-row: 3;
+}

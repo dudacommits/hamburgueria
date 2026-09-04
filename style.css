@@ -156,17 +156,18 @@ header #buttons button {
     color: rgb(221, 156, 14);
 }
 
+.textohistoria{
+    
+    margin-bottom: 60px ;
+
+}
+
 .textohistoria p {
     text-indent: 10px;
-    margin: 10px 7px;
-}
-
-#historia img {
-    border-top-right-radius: 15px;
-    border-end-end-radius: 15px;
-    width: 200px;
+    margin: 20px 7px;
 
 }
+
 
 #historia h4{
     color: rgb(221, 156, 14);
@@ -180,6 +181,14 @@ header #buttons button {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+#chefs{
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px rgba(221, 88, 11, 0.514);
+    display: block;
+    width: 300px;
+    margin: auto;
 }
 
 .card{

@@ -2,16 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Tangerine:wght@400;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body{
     background-color: rgb(13, 13, 22);
-    grid-template-columns: 10px 1fr 10px;
-    width: 100vw;
-    height: 100vh;
     margin: 0px;
     padding: 0px;
     font-family: "Quicksand", sans-serif;
-   font-optical-sizing: auto;
-   font-style: normal;
     color: white;
 }
 
@@ -27,7 +33,7 @@ header{
 }
 
 #textos{
-    margin-left: -160px;
+    margin-left: -150px;
     display: flex;
     flex-direction: column;
     text-align: center;}
@@ -37,7 +43,7 @@ header #titulo h1{
     font-family: "Pirata One", system-ui;
     letter-spacing: 3px;
     font-weight: 300;
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin: 0px;
    
 }
@@ -47,7 +53,7 @@ header #titulo h1{
     font-weight: 800;
     font-style: normal;
     margin: 0px;
-    font-size: 2em;
+    font-size: 2.4em;
     translate: 25px -6px;
 }
 
@@ -64,7 +70,7 @@ header #buttons button {
     color: black;
     font-weight: 500;
     margin: 5px 1px;
-    padding: 9px;
+    padding: 10px 12px;
     border: none;
     background-color: rgb(233, 162, 10);
     box-shadow: 0px 0px 10px rgba(221, 155, 14, 0.473);
@@ -111,7 +117,7 @@ header #buttons button {
 }
 
 #cards{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -180,7 +186,7 @@ header #buttons button {
 img#burguer {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 320px;
+    width: 316px;
 }
 
 .item h4{
@@ -216,6 +222,7 @@ img#burguer {
 .pedir{
     gap: 5px;
     background-color: rgb(236, 166, 13);
+    color: white;
     border: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -262,7 +269,7 @@ img#burguer {
 
 #contato h3{
     display: inline-block;
-    font-size: 2.8em;
+    font-size: 2.6em;
     font-weight: 100;
     text-align: center;
     font-weight: 400;
@@ -276,7 +283,7 @@ img#burguer {
     font-weight: 100;
     color: rgb(221, 156, 14) ;
     text-align: center;
-    font-size: 2.7em;
+    font-size: 2.5em;
     font-weight: 100;
     margin-top: 130px;
     margin-bottom: 5px;
@@ -296,7 +303,7 @@ img#burguer {
     align-items: center;
     text-align: center;
     margin: 50px auto;
-    width: 400px;
+    width: 350px;
     height: 300px;
     background-color: blue;
     background-image: url(img/map.png);
@@ -338,55 +345,85 @@ img#burguer {
     font-weight: 600;
 }
 
-.icone{
-    box-shadow: 0px 0px 15px rgba(221, 155, 14, 0.438);
-    grid-row: 2;
+.icone {
     grid-column: 1;
-    background-color: rgb(221, 155, 14);
-    border-radius: 10px;
-    height: 26px;
-    padding: 6px;
+    grid-row: 1 / 4;
+
     width: 26px;
-}
+    height: 26px;
+    padding: 18px;
 
-.info{
-    display: grid;
-    gap: 0px;
-    grid-template-columns: 50px 1fr;
-    grid-template-rows: 30px 40px 30px;
-    text-align: start;
-    margin-left: 50px;
-    justify-items: start;
+    background-color: rgb(221, 156, 14);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(221, 155, 14, 0.438);
+
+    display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: center;
 }
 
-.info h4{
-  color: orangered;
- grid-column: 2;
- grid-row: 2;
-}
-
-.info p{
-
- grid-column: 2;
- grid-row: 3;
-}
-
-.info p#p1{
-
- grid-column: 2;
- grid-row: 3;
-}
-
-.info p#p2{
-
- grid-column: 2;
- grid-row: 4;
-}
-
-#horarios{
+.info {
     display: grid;
-    grid-template-columns: 50px 1fr;
-    grid-template-rows: 30px 40px 30px 30px ;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: auto auto;
+
+    column-gap: 10px;
+    row-gap: 5px;
+
+    text-align: start;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.info h4 {
+    grid-column: 2;
+    grid-row: 1;
+
+    margin: 0;
+    color: orangered;
+}
+
+.info p {
+    grid-column: 2;
+    grid-row: 2;
+
+    margin: 0;
+}
+
+#horarios {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: auto auto auto;
+
+    column-gap: 10px;
+    row-gap: 5px;
+
+    align-items: center;
+}
+
+#horarios .icone {
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+
+#horarios h4 {
+    grid-column: 2;
+    grid-row: 1;
+
+    margin: 0;
+}
+
+#horarios #p1 {
+    grid-column: 2;
+    grid-row: 2;
+
+    margin: 0;
+}
+
+#horarios #p2 {
+    grid-column: 2;
+    grid-row: 3;
+
+    margin: 0;
 }

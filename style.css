@@ -15,13 +15,9 @@ body{
     color: white;
 }
 
-section#principal{
-    grid-column: 2;
-}
 
 header{
-    padding: 50px;
-    grid-column: 1;
+    padding: 100px;
     margin: 0px;
     background-color: rgb(30, 30, 53);
     background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(img/ChatGPT\ Image\ 4\ de\ set.\ de\ 2026\,\ 09_13_51.png);
@@ -31,16 +27,17 @@ header{
 }
 
 #textos{
-    
+    margin-left: -160px;
     display: flex;
     flex-direction: column;
-    text-align: start;}
+    text-align: center;}
 
 header #titulo h1{
+
     font-family: "Pirata One", system-ui;
     letter-spacing: 3px;
     font-weight: 300;
-    font-size: 2.2em;
+    font-size: 2.5em;
     margin: 0px;
    
 }
@@ -50,7 +47,7 @@ header #titulo h1{
     font-weight: 800;
     font-style: normal;
     margin: 0px;
-    font-size: 1.6em;
+    font-size: 2em;
     translate: 25px -6px;
 }
 
@@ -66,7 +63,7 @@ header #buttons #b2 {
 header #buttons button {
     color: black;
     font-weight: 500;
-    margin: 5px 2px;
+    margin: 5px 1px;
     padding: 9px;
     border: none;
     background-color: rgb(233, 162, 10);
@@ -75,8 +72,10 @@ header #buttons button {
 }
 
 #historia{
-    padding: 35px;
+    padding: 55px 0px 78px;
     background-color: rgba(0, 0, 0, 0.322);
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
 }
 
 #historia h3{
@@ -107,11 +106,12 @@ header #buttons button {
     color: rgb(221, 156, 14);
     font-size: 1.4em;
     margin-top: 70px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
 #cards{
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
 }
@@ -127,6 +127,10 @@ header #buttons button {
     font-weight: 600;
     border-radius: 25px;
    
+}
+
+.card:hover{
+    translate: 0px -8px;
 }
 
 .card p {margin: 1px;}
@@ -166,6 +170,11 @@ header #buttons button {
     width: 320px;
     text-align: start;
     background-color: rgba(255, 255, 255, 0.041);
+    transition: translate 0.5s;
+}
+
+.item:hover{
+    translate: 0px -15px;
 }
 
 img#burguer {
@@ -206,7 +215,7 @@ img#burguer {
 
 .pedir{
     gap: 5px;
-    background-color: rgb(221, 156, 14);
+    background-color: rgb(236, 166, 13);
     border: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -218,12 +227,18 @@ img#burguer {
     text-align: center;
     border-radius: 20px;
     margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+.pedir:hover{
+    background-color: rgb(212, 129, 4);
 }
 
 #botao{
     display: flex;
     justify-content: center;
 }
+
 
 #vercardapio{
     color: black;
@@ -235,6 +250,13 @@ img#burguer {
     
     font-size: 1.5em;
     font-weight: 100;
+    transition: translate 0.4s ,
+    background-color 0.5s
+}
+
+#vercardapio:hover{
+    translate: 0px -7px;
+    background-color: rgb(212, 129, 4);
 }
 
 

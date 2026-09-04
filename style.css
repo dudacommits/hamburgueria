@@ -20,6 +20,53 @@ body{
     font-family: "Quicksand", sans-serif;
     color: white;
 }
+nav { 
+  position: fixed; 
+  background-color: rgb(13, 13, 22);
+  top: 0;          
+  left: 0;         
+  width: 100%;     
+  z-index: 1000;
+  padding: 0px 2px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  height: 50px; 
+  border-end-end-radius: 5px;
+  border-end-start-radius: 5px;
+} 
+
+nav img { 
+  width: 50px; 
+  margin-right: auto;
+  
+} 
+
+#menu {
+    font-size: 1.1em; 
+  color: rgb(233, 162, 9);
+  display: flex; 
+  justify-content: center;
+    gap: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#menu svg{
+    padding: 5px;
+    transition: color 0.4s,translate 0.4s ;
+}
+
+
+#menu svg:hover{
+    padding: 5px;
+background-color: rgb(233, 162, 9);
+box-shadow: 0px 0px 10px rgb(233, 162, 9);
+color: white;
+border-radius: 20px;
+translate: 0px 4px;
+}
 
 
 header{
@@ -75,6 +122,19 @@ header #buttons button {
     background-color: rgb(233, 162, 10);
     box-shadow: 0px 0px 10px rgba(221, 155, 14, 0.473);
     border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid rgba(221, 155, 14, 0);
+}
+
+#buttons button:hover{
+    background-color: rgb(247, 246, 246);
+    color: rgb(233, 162, 10);
+    border: 1px solid rgb(221, 155, 14);
+}
+
+#buttons #b2:hover{
+    background-color: rgb(247, 246, 246);
+    color: rgb(233, 162, 10);
 }
 
 #historia{
@@ -132,6 +192,7 @@ header #buttons button {
     font-size: 1em;
     font-weight: 600;
     border-radius: 25px;
+    transition: translate 0.4s;
    
 }
 
@@ -246,6 +307,9 @@ img#burguer {
     justify-content: center;
 }
 
+#cardapiocompleto{
+    display: none;
+}
 
 #vercardapio{
     color: black;
@@ -303,11 +367,18 @@ img#burguer {
     align-items: center;
     text-align: center;
     margin: 50px auto;
-    width: 350px;
-    height: 300px;
+    width: 320px;
+    height:310px;
     background-color: blue;
     background-image: url(img/map.png);
     border-radius: 30px;
+    transition: width 0.5s, height 0.5s, box-shadow 0.5s;
+}
+
+#localizar:hover{
+    width: 380px;
+    height: 310px;
+    box-shadow: 0px 0px 15px rgba(63, 63, 63, 0.521);
 }
 
 #local{

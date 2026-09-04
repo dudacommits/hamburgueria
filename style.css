@@ -20,11 +20,11 @@ section#principal{
 }
 
 header{
-    padding: 20px;
+    padding: 50px;
     grid-column: 1;
     margin: 0px;
     background-color: rgb(30, 30, 53);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(img/ChatGPT\ Image\ 4\ de\ set.\ de\ 2026\,\ 09_13_51.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(img/ChatGPT\ Image\ 4\ de\ set.\ de\ 2026\,\ 09_13_51.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -64,9 +64,10 @@ header #buttons #b2 {
 }
 
 header #buttons button {
+    color: black;
     font-weight: 500;
     margin: 5px 2px;
-    padding: 5px;
+    padding: 9px;
     border: none;
     background-color: rgb(233, 162, 10);
     box-shadow: 0px 0px 10px rgba(221, 155, 14, 0.473);
@@ -76,10 +77,6 @@ header #buttons button {
 #historia{
     padding: 35px;
     background-color: rgba(0, 0, 0, 0.322);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
 }
 
 #historia h3{
@@ -88,7 +85,7 @@ header #buttons button {
     font-family: "Pirata One", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.2em;
+    font-size: 2.5em;
     text-align: center;
     letter-spacing: 2px;
     color: rgb(221, 156, 14);
@@ -96,7 +93,7 @@ header #buttons button {
 
 .textohistoria p {
     text-indent: 10px;
-    margin: 10px 15px;
+    margin: 10px 7px;
 }
 
 #historia img {
@@ -109,14 +106,12 @@ header #buttons button {
 #historia h4{
     color: rgb(221, 156, 14);
     font-size: 1.4em;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 15px;
     text-align: center;
 }
 
 #cards{
-    
-    padding: 10px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -163,7 +158,7 @@ header #buttons button {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    margin: 90px auto;
+    margin: 110px auto;
     width: 320px;
     text-align: start;
     background-color: rgba(255, 255, 255, 0.041);
@@ -204,6 +199,7 @@ img#burguer {
 }
 
 #vercardapio{
+    color: black;
     padding: 8px;
     font-family: "Pirata One", system-ui;
     background-color: rgb(221, 156, 14) ;
@@ -217,11 +213,9 @@ img#burguer {
 
 #contato h3{
     display: inline-block;
-    font-size: 2.2em;
+    font-size: 2.8em;
     font-weight: 100;
-    
     text-align: center;
-    font-size: 2em;
     font-weight: 400;
     margin-top: 130px;
     margin-right: 10px;
@@ -230,11 +224,10 @@ img#burguer {
 
 #nome{
     font-family: "Pirata One", system-ui;
-    font-size: 1em;
     font-weight: 100;
     color: rgb(221, 156, 14) ;
     text-align: center;
-    font-size: 2.2em;
+    font-size: 2.7em;
     font-weight: 100;
     margin-top: 130px;
     margin-bottom: 5px;
@@ -314,7 +307,6 @@ img#burguer {
     grid-template-rows: 30px 40px 30px;
     text-align: start;
     margin-left: 50px;
-    margin-bottom: 10px;
     justify-items: start;
     align-items: center;
     align-content: center;
@@ -330,4 +322,22 @@ img#burguer {
 
  grid-column: 2;
  grid-row: 3;
+}
+
+.info p#p1{
+
+ grid-column: 2;
+ grid-row: 3;
+}
+
+.info p#p2{
+
+ grid-column: 2;
+ grid-row: 4;
+}
+
+#horarios{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 30px 40px 30px 30px ;
 }

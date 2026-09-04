@@ -20,26 +20,27 @@ section#principal{
 }
 
 header{
+    padding: 20px;
     grid-column: 1;
     margin: 0px;
     background-color: rgb(30, 30, 53);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.790), rgba(0, 0, 0, 0.790)), url(img/pirate-ship-in-a-storm-1920x1080-v0-kllibqiy39c51.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(img/ChatGPT\ Image\ 4\ de\ set.\ de\ 2026\,\ 09_13_51.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #textos{
-    padding: 40px;
+    
     display: flex;
     flex-direction: column;
-    text-align: center;}
+    text-align: start;}
 
 header #titulo h1{
     font-family: "Pirata One", system-ui;
     letter-spacing: 3px;
     font-weight: 300;
-    font-size: 3em;
+    font-size: 2.2em;
     margin: 0px;
    
 }
@@ -49,28 +50,36 @@ header #titulo h1{
     font-weight: 800;
     font-style: normal;
     margin: 0px;
-    font-size: 2.4em;
-    translate: 60px -8px;
+    font-size: 1.6em;
+    translate: 25px -6px;
 }
 
-header #slogan {
-    margin: 8px 0px;
-    color: rgb(16, 174, 223);
+
+header #buttons #b2 {
+    margin: 0px 0px;
+    background-color: rgba(15, 15, 15, 0.925);
+    border: 1px solid rgb(221, 155, 14);
+    color: white;
+    
 }
 
 header #buttons button {
-    margin: 10px 0px;
-    padding: 7px;
+    font-weight: 500;
+    margin: 5px 2px;
+    padding: 5px;
     border: none;
-    background-color: rgb(228, 119, 18);
-    border-radius: 5px;
+    background-color: rgb(233, 162, 10);
+    box-shadow: 0px 0px 10px rgba(221, 155, 14, 0.473);
+    border-radius: 8px;
 }
 
 #historia{
+    padding: 35px;
     background-color: rgba(0, 0, 0, 0.322);
-    display: grid;
-    width: 100vw;
-    grid-template-columns: 2fr 1fr;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 #historia h3{
@@ -82,12 +91,12 @@ header #buttons button {
     font-size: 2.2em;
     text-align: center;
     letter-spacing: 2px;
-    color: rgb(15, 117, 75);
+    color: rgb(221, 156, 14);
 }
 
-#historia p {
+.textohistoria p {
     text-indent: 10px;
-    margin: 10px;
+    margin: 10px 15px;
 }
 
 #historia img {
@@ -95,6 +104,41 @@ header #buttons button {
     border-end-end-radius: 15px;
     width: 200px;
 
+}
+
+#historia h4{
+    color: rgb(221, 156, 14);
+    font-size: 1.4em;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#cards{
+    
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(226, 205, 181);
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 25px;
+   
+}
+
+.card p {margin: 1px;}
+
+.dest{
+    color: orangered;
+    text-shadow: 0px 0px 10px rgba(255, 68, 0, 0.349);
 }
 
 #cardapio h3{
@@ -106,7 +150,7 @@ header #buttons button {
   font-size: 3.4em;
   text-align: center;
   letter-spacing: 2px;
-  color: rgb(16, 174, 223);
+  color: rgb(221, 156, 14);
 }
 
 #cardapio p{
@@ -114,11 +158,13 @@ header #buttons button {
 }
 
 .item{
+    border: 2px solid rgba(243, 167, 4, 0.623);
+    box-shadow: 0px 0px 20px rgba(243, 167, 4, 0.274);
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     margin: 90px auto;
-    width: 380px;
+    width: 320px;
     text-align: start;
     background-color: rgba(255, 255, 255, 0.041);
 }
@@ -126,26 +172,28 @@ header #buttons button {
 img#burguer {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 380px;
+    width: 320px;
 }
 
 .item h4{
-    text-indent: 20px;
+    
+    text-indent: 15px;
     font-family: "Pirata One", system-ui;
     letter-spacing: 2px;
-    font-size: 1.7em;
+    font-size: 1.8em;
     font-weight: 100;
     margin: 15px 0px;
     display: inline-block;
 }
 
 .legenda{
+    
     text-indent: 2px;
     display: inline-block;
 }
 
 .ingredientes{
-    
+    color: rgba(255, 255, 255, 0.486);
     text-align: start;
     margin: 0px 10px;
 }
@@ -158,7 +206,7 @@ img#burguer {
 #vercardapio{
     padding: 8px;
     font-family: "Pirata One", system-ui;
-    background-color: rgb(221, 92, 18) ;
+    background-color: rgb(221, 156, 14) ;
     border-radius: 5px;
     border: none;
     
@@ -166,14 +214,32 @@ img#burguer {
     font-weight: 100;
 }
 
+
 #contato h3{
+    display: inline-block;
+    font-size: 2.2em;
+    font-weight: 100;
+    
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    margin-top: 130px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#nome{
+    font-family: "Pirata One", system-ui;
+    font-size: 1em;
+    font-weight: 100;
+    color: rgb(221, 156, 14) ;
+    text-align: center;
     font-size: 2.2em;
     font-weight: 100;
     margin-top: 130px;
     margin-bottom: 5px;
 }
+
 
 #contato{
     text-align: center;
@@ -196,7 +262,7 @@ img#burguer {
 }
 
 #local{
-    color: rgb(15, 117, 75);
+    color: rgb(221, 156, 14);
     font-size: 3em;
     text-shadow: 0px 0px 15px rgba(18, 165, 104, 0.205);
 }
@@ -218,10 +284,11 @@ img#burguer {
 }
 
 #localizar button{
+    color: white;
     padding: 7px;
     margin: 8px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(15, 117, 75);
+    background-color: rgb(221, 156, 14);
     border-radius: 5px;
     border: none;
     width: 170px;
@@ -230,10 +297,10 @@ img#burguer {
 }
 
 .icone{
-
+    box-shadow: 0px 0px 15px rgba(221, 155, 14, 0.438);
     grid-row: 2;
     grid-column: 1;
-    background-color: rgba(15, 117, 75, 0.849);
+    background-color: rgb(221, 155, 14);
     border-radius: 10px;
     height: 26px;
     padding: 6px;
@@ -254,11 +321,13 @@ img#burguer {
 }
 
 .info h4{
+  color: orangered;
  grid-column: 2;
  grid-row: 2;
 }
 
 .info p{
+
  grid-column: 2;
  grid-row: 3;
 }
